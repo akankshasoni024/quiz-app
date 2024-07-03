@@ -1,45 +1,34 @@
-import React from "react";
-import { StyleSheet, View, StatusBar } from "react-native";
-import ResultScreen from "./src/screens/ResultScreen";
-import { LinearGradient } from "expo-linear-gradient";
-import QuestionScreen from "./src/screens/QuestionScreen";
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import { Button, View, Text, StyleSheet } from 'react-native';
+import QuestionScreen from './src/screens/QuestionScreen.jsx';
+
+const Stack = createStackNavigator();
+
+const HomeScreen = ({ navigation }) => {
+  return (
+    <View style={styles.container}>
+      <Button title="Science" onPress={() => navigation.navigate('Question')} />
+    </View>
+  );
+};
 
 export default function App() {
   return (
-    <LinearGradient
-      colors={["#003352", "#002338", "#000D1E", "#1D0C24"]}
-      start={{ x: 0, y: 0 }}
-      end={{ x: 1, y: 1 }}
-      style={styles.gradient}
-    >
-      <StatusBar barStyle="light-content" />
-      <View style={styles.container}>
-        <QuestionScreen/>
-        {/* <ResultScreen
-          score={70}
-          correct={7}
-          incorrect={1}
-          total={10}
-          attempted={8}
-          status="Congratulations!!!"
-        /> */}
-      </View>
-    </LinearGradient>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Home">
+      <Stack.Screen name="Home" component={HomeScreen} />
+      <Stack.Screen name="Question" component={QuestionScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
 
 const styles = StyleSheet.create({
-  gradient: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    width: "100%",
-    height: "100%",
-  },
   container: {
     flex: 1,
-    width: "100%",
-    justifyContent: "center",
-    alignItems: "center",
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });

@@ -1,0 +1,53 @@
+[
+    {
+      "question": "What is the chemical symbol for water?",
+      "options": ["H2", "O2", "H2O", "CO2"],
+      "answer": "H2O"
+    },
+    {
+      "question": "Which planet is known as the Red Planet?",
+      "options": ["Earth", "Mars", "Jupiter", "Venus"],
+      "answer": "Mars"
+    },
+    {
+      "question": "What is the process by which plants make their food?",
+      "options": ["Respiration", "Photosynthesis", "Digestion", "Fermentation"],
+      "answer": "Photosynthesis"
+    },
+    {
+      "question": "What is the hardest natural substance on Earth?",
+      "options": ["Gold", "Iron", "Diamond", "Silver"],
+      "answer": "Diamond"
+    },
+    {
+      "question": "Which gas do humans need to breathe in to survive?",
+      "options": ["Nitrogen", "Hydrogen", "Oxygen", "Carbon Dioxide"],
+      "answer": "Oxygen"
+    },
+    {
+      "question": "What is the primary source of energy for the Earth's climate system?",
+      "options": ["The Moon", "The Sun", "The Earth's core", "Ocean currents"],
+      "answer": "The Sun"
+    },
+    {
+      "question": "What is the main element found in the sun?",
+      "options": ["Carbon", "Hydrogen", "Oxygen", "Nitrogen"],
+      "answer": "Hydrogen"
+    },
+    {
+      "question": "Which part of the cell contains genetic material?",
+      "options": ["Cell wall", "Mitochondria", "Nucleus", "Ribosome"],
+      "answer": "Nucleus"
+    },
+    {
+      "question": "Which of the following is a non-renewable resource?",
+      "options": ["Solar energy", "Wind energy", "Coal", "Hydroelectric power"],
+      "answer": "Coal"
+    },
+    {
+      "question": "What is the speed of light in a vacuum?",
+      "options": ["3,000 km/s", "30,000 km/s", "300,000 km/s", "3,000,000 km/s"],
+      "answer": "300,000 km/s"
+    }
+  ]
+  
