@@ -2,6 +2,7 @@ import React from "react";
 import { StyleSheet, View, StatusBar } from "react-native";
 import ResultScreen from "./src/screens/ResultScreen";
 import { LinearGradient } from "expo-linear-gradient";
+import QuestionScreen from "./src/screens/QuestionScreen";
 
 export default function App() {
   return (
@@ -13,14 +14,15 @@ export default function App() {
     >
       <StatusBar barStyle="light-content" />
       <View style={styles.container}>
-        <ResultScreen
+        <QuestionScreen/>
+        {/* <ResultScreen
           score={70}
           correct={7}
           incorrect={1}
           total={10}
           attempted={8}
           status="Congratulations!!!"
-        />
+        /> */}
       </View>
     </LinearGradient>
   );
