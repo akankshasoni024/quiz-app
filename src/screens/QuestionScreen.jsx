@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
-import questions from '../../static/questions.json';
+import questionsData from '../../static/questions.json';
 
-const QuestionScreen = () => {
+const QuestionScreen = ({ route }) => {
+  const { subject } = route.params;
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedOption, setSelectedOption] = useState(null);
   const [showAnswer, setShowAnswer] = useState(false);
 
+  const questions = questionsData[subject];
   const currentQuestion = questions[currentQuestionIndex];
 
   const handleOptionPress = (option) => {
@@ -38,7 +40,6 @@ const QuestionScreen = () => {
           <Text style={styles.lightBulbText}>4</Text>
         </View>
       </View>
-      {/* <ProgressBarAndroid style={styles.progressBar} styleAttr="Horizontal" indeterminate={false} progress={0.1} /> */}
       <Text style={styles.question}>{`Q. ${currentQuestion.question}`}</Text>
       {currentQuestion.options.map((option, index) => (
         <TouchableOpacity
@@ -92,11 +93,6 @@ const styles = StyleSheet.create({
     color: 'black',
     fontSize: 18,
     fontWeight: 'bold',
-  },
-  progressBar: {
-    width: '100%',
-    height: 10,
-    marginBottom: 30,
   },
   question: {
     color: 'white',

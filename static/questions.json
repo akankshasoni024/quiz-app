@@ -1,4 +1,5 @@
-[
+{
+  "Science": [
     {
       "question": "What is the chemical symbol for water?",
       "options": ["H2", "O2", "H2O", "CO2"],
@@ -49,5 +50,81 @@
       "options": ["3,000 km/s", "30,000 km/s", "300,000 km/s", "3,000,000 km/s"],
       "answer": "300,000 km/s"
     }
+  ],
+  "Computer Science": [
+    {
+      "question": "What does CPU stand for in computer terminology?",
+      "options": ["Central Processing Unit", "Central Programming Unit", "Central Process Unit", "Central Peripheral Unit"],
+      "answer": "Central Processing Unit"
+    },
+    {
+      "question": "What is the binary representation of the decimal number 10?",
+      "options": ["1010", "1100", "1001", "1110"],
+      "answer": "1010"
+    },
+    {
+      "question": "Which of the following is a programming language?",
+      "options": ["HTML", "CSS", "JavaScript", "XML"],
+      "answer": "JavaScript"
+    },
+    {
+      "question": "What is the full form of RAM?",
+      "options": ["Readily Accessible Memory", "Random Access Memory", "Read Access Memory", "Real Access Memory"],
+      "answer": "Random Access Memory"
+    },
+    {
+      "question": "Which company developed the Java programming language?",
+      "options": ["Microsoft", "Sun Microsystems", "Apple", "Google"],
+      "answer": "Sun Microsystems"
+    }
+  ],
+  "Mathematics": [
+    {
+      "question": "What is the value of π (pi) to two decimal places?",
+      "options": ["3.12", "3.14", "3.16", "3.18"],
+      "answer": "3.14"
+    },
+    {
+      "question": "What is the square root of 144?",
+      "options": ["10", "11", "12", "13"],
+      "answer": "12"
+    },
+    {
+      "question": "What is 5! (5 factorial)?",
+      "options": ["120", "60", "24", "15"],
+      "answer": "120"
+    },
+    {
+      "question": "What is the sum of angles in a triangle?",
+      "options": ["180 degrees", "360 degrees", "90 degrees", "270 degrees"],
+      "answer": "180 degrees"
+    }
+  ],
+  "History": [
+    {
+      "question": "Who was the first President of the United States?",
+      "options": ["George Washington", "Thomas Jefferson", "Abraham Lincoln", "John Adams"],
+      "answer": "George Washington"
+    },
+    {
+      "question": "In which year did World War II end?",
+      "options": ["1942", "1944", "1945", "1946"],
+      "answer": "1945"
+    },
+    {
+      "question": "Which ancient civilization built the pyramids?",
+      "options": ["Roman", "Greek", "Egyptian", "Mesopotamian"],
+      "answer": "Egyptian"
+    },
+    {
+      "question": "What was the primary language spoken in the Roman Empire?",
+      "options": ["Greek", "Latin", "French", "German"],
+      "answer": "Latin"
+    },
+    {
+      "question": "Who wrote the Declaration of Independence?",
+      "options": ["George Washington", "Thomas Jefferson", "Benjamin Franklin", "John Adams"],
+      "answer": "Thomas Jefferson"
+    }
   ]
-  
+}
