@@ -1,44 +1,39 @@
 import React from "react";
-import { View, Text, StyleSheet, Image } from "react-native";
+import { View, Text, StyleSheet, Image, TouchableOpacity } from "react-native";
 
-const ResultScreen = ({
-  score,
-  correct,
-  incorrect,
-  total,
-  attempted,
-  status,
-}) => {
+const ResultScreen = ({ route, navigation }) => {
+  const { score, correct, incorrect, total, attempted, status } = route.params;
+
   const getEmoji = () => {
     return score > 30
       ? require("../../assets/congratulations.png")
       : require("../../assets/ooops.png");
   };
 
-  const iconCorrect = require("../../assets/correct.png"); // Update with your correct icon path
-  const iconIncorrect = require("../../assets/incorrect.png"); // Update with your incorrect icon path
-  const iconTotal = require("../../assets/total.png"); // Update with your total icon path
-  const iconAttempted = require("../../assets/attempted.png"); // Update with your attempted icon path
+  const iconCorrect = require("../../assets/correct.png");
+  const iconIncorrect = require("../../assets/incorrect.png");
+  const iconTotal = require("../../assets/total.png");
+  const iconAttempted = require("../../assets/attempted.png");
 
   return (
     <View style={styles.container}>
       <Text style={styles.headline}>Quiz Summary</Text>
       <View style={styles.card}>
         <Image source={getEmoji()} style={styles.emoji} />
-        <Text style={styles.status}>{status}</Text>
+        <Text style={styles.status}>{score > 30?"Congratulations":"Oops"}!!!</Text>
         <Text style={styles.score}>Your Score is</Text>
         <Text style={styles.scoreValue}>{score}%</Text>
         <View style={styles.statsContainer}>
           <View style={styles.statBox}>
             <Image source={iconCorrect} style={styles.icon} />
-            <View>
+            <View style={styles.statTextContainer}>
               <Text style={styles.statNumber}>{correct}</Text>
               <Text style={styles.statLabel}>Correct</Text>
             </View>
           </View>
           <View style={styles.statBox}>
             <Image source={iconIncorrect} style={styles.icon} />
-            <View>
+            <View style={styles.statTextContainer}>
               <Text style={styles.statNumber}>{incorrect}</Text>
               <Text style={styles.statLabel}>Incorrect</Text>
             </View>
@@ -47,28 +42,26 @@ const ResultScreen = ({
         <View style={styles.statsContainer}>
           <View style={styles.statBox}>
             <Image source={iconTotal} style={styles.icon} />
-            <View>
+            <View style={styles.statTextContainer}>
               <Text style={styles.statNumber}>{total}</Text>
               <Text style={styles.statLabel}>Total</Text>
             </View>
           </View>
           <View style={styles.statBox}>
             <Image source={iconAttempted} style={styles.icon} />
-            <View>
+            <View style={styles.statTextContainer}>
               <Text style={styles.statNumber}>{attempted}</Text>
               <Text style={styles.statLabel}>Attempted</Text>
-            </View>
-            <View>
-              <Text style={styles.failText}>
-                {score < 30 && (
-                  <Text style={styles.failText}>Let's study this topic and try again</Text>
-                )}
-              </Text>
             </View>
           </View>
         </View>
       </View>
-      <Text style={styles.footerText}>Try More Quizzes</Text>
+      <TouchableOpacity onPress={() => navigation.navigate('HomeScreen')}>
+        <Text style={styles.footerText}>Try More Quizzes</Text>
+      </TouchableOpacity>
+      <TouchableOpacity style={styles.aboutButton} onPress={() => navigation.navigate('AboutScreen')}>
+        <Text style={styles.aboutButtonText}>Know About Us</Text>
+      </TouchableOpacity>
     </View>
   );
 };
@@ -78,14 +71,15 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
+    backgroundColor: "#0d3b66",
     padding: 20,
   },
   headline: {
     fontSize: 24,
     fontWeight: "bold",
-    color: "#fff",
-    marginBottom: 30,
-    padding: 30,
+    color: "#333",
+    marginBottom: 70,
+    color:"white",
   },
   card: {
     width: "90%",
@@ -127,26 +121,30 @@ const styles = StyleSheet.create({
   },
   statsContainer: {
     flexDirection: "row",
-    justifyContent: "space-around",
+    justifyContent: "space-between",
     width: "100%",
     marginBottom: 20,
   },
   statBox: {
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "center",
+    flex: 1,
+
     backgroundColor: "white",
     borderRadius: 10,
     padding: 10,
     margin: 5,
-    width: 140, // Set a fixed width
-    height: 70, // Set a fixed height
+    display:"flex",
+    flexDirection:"row",
+    alignItems: "center",
+    justifyContent: "start",
+    maxWidth: '45%',
   },
-  failText:{backgroundColor:'pink',fontstyle:'underline'},
   icon: {
-    width: 22,
-    height: 24,
-    marginRight: 10,
+    width: 24,
+    height: 24 ,
+    marginBottom: 10,
+  },
+  statTextContainer: {
+    alignItems: "center",
   },
   statNumber: {
     fontSize: 24,
@@ -159,9 +157,21 @@ const styles = StyleSheet.create({
   },
   footerText: {
     fontSize: 18,
-    color: "#fff",
+    color: "white",
     textDecorationLine: "underline",
     marginTop: 20,
+  },
+  aboutButton: {
+    marginTop: 20,
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    backgroundColor: "#1e90ff",
+    borderRadius: 5,
+  },
+  aboutButtonText: {
+    color: "white",
+    fontSize: 16,
+    fontWeight: "bold",
   },
 });
 

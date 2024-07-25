@@ -1,42 +1,60 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { View, Text, TouchableOpacity, StyleSheet, Image } from "react-native";
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const HomeScreen = ({ navigation }) => {
+  const [userName, setUserName] = useState('');
+
+  useEffect(() => {
+    const fetchUserName = async () => {
+      try {
+        const name = await AsyncStorage.getItem('userName');
+        if (name) {
+          setUserName(name);
+        }
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
+    fetchUserName();
+  }, []);
+
   const categories = [
     {
       title: "Mathematics",
       image: require("../../assets/homeIcons/mathematics.png"),
-      screen: "Question",
+      screen: "QuestionScreen",
       subject: "Mathematics",
     },
     {
       title: "Science",
       image: require("../../assets/homeIcons/science.png"),
-      screen: "Question",
+      screen: "QuestionScreen",
       subject: "Science",
     },
     {
       title: "Computer",
       image: require("../../assets/homeIcons/computer.png"),
-      screen: "Question",
+      screen: "QuestionScreen",
       subject: "Computer Science",
     },
     {
       title: "General Knowledge",
       image: require("../../assets/homeIcons/general_knowledge.png"),
-      screen: "Question",
+      screen: "QuestionScreen",
       subject: "General Knowledge",
     },
     {
       title: "Sports",
       image: require("../../assets/homeIcons/sports.png"),
-      screen: "Question",
+      screen: "QuestionScreen",
       subject: "Sports",
     },
     {
       title: "Art and Literature",
       image: require("../../assets/homeIcons/art_and_literature.png"),
-      screen: "Question",
+      screen: "QuestionScreen",
       subject: "Art and Literature",
     },
   ];
@@ -44,10 +62,17 @@ const HomeScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <Text style={styles.userText}>Hi Vishwas</Text>
-        <Text style={styles.rewardsText}>Rewards</Text>
+        <View>
+          <Text style={styles.userText}>Hi {userName},</Text>
+          <Text style={styles.welcomeText}>Welcome to Quizze!</Text>
+        </View>
+        <TouchableOpacity onPress={() => navigation.navigate('AboutScreen')}>
+          <Text style={styles.rewardsText}>About Us</Text>
+        </TouchableOpacity>
       </View>
       <View style={styles.categories}>
+      <Text style={styles.headline}>Choose a subject to play Quiz..</Text>
+
         {categories.map((category, index) => (
           <TouchableOpacity
             key={index}
@@ -62,14 +87,6 @@ const HomeScreen = ({ navigation }) => {
             <Text style={styles.categoryText}>{category.title}</Text>
           </TouchableOpacity>
         ))}
-      </View>
-      <View style={styles.footer}>
-        <TouchableOpacity>
-          <Text style={styles.footerText}>Previous</Text>
-        </TouchableOpacity>
-        <TouchableOpacity>
-          <Text style={styles.footerText}>Next</Text>
-        </TouchableOpacity>
       </View>
     </View>
   );
@@ -95,13 +112,27 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: "bold",
   },
+  welcomeText: {
+    color: "white",
+    fontSize: 16,
+    paddingTop:5,
+    fontWeight: "bold",
+
+  },
+  headline: {
+    color: "white",
+    fontSize: 20,
+    paddingTop:5,
+    textAlign:"center",
+    fontWeight: "bold",
+
+  },
   rewardsText: {
     color: "#ffd700",
     fontSize: 18,
     fontWeight: "bold",
   },
   categories: {
-    flex: 1,
     justifyContent: "center",
     width: "100%",
   },
@@ -123,15 +154,6 @@ const styles = StyleSheet.create({
     marginRight: 10,
   },
   categoryText: {
-    color: "white",
-    fontSize: 18,
-  },
-  footer: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    width: "100%",
-  },
-  footerText: {
     color: "white",
     fontSize: 18,
   },

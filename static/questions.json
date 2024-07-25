@@ -1,130 +1,362 @@
 {
+  "Mathematics": [
+    {
+      "question": "What is the value of the expression 2+2?",
+      "options": ["3", "4", "5", "6"],
+      "answer": "4",
+      "hint": "It's the result of adding two and two."
+    },
+    {
+      "question": "What is 7 multiplied by 8?",
+      "options": ["54", "56", "58", "60"],
+      "answer": "56",
+      "hint": "It's the result of doubling 28."
+    },
+    {
+      "question": "What is the square of 5?",
+      "options": ["20", "25", "30", "35"],
+      "answer": "25",
+      "hint": "It's the result of multiplying 5 by itself."
+    },
+    {
+      "question": "What is the value of 9 squared?",
+      "options": ["81", "72", "99", "64"],
+      "answer": "81",
+      "hint": "It's the result of 9 multiplied by 9."
+    },
+    {
+      "question": "What is the result of 15 divided by 3?",
+      "options": ["3", "5", "7", "9"],
+      "answer": "5",
+      "hint": "It's the number of times 3 fits into 15."
+    },
+    {
+      "question": "What is 6 subtracted from 10?",
+      "options": ["2", "3", "4", "5"],
+      "answer": "4",
+      "hint": "It's what remains after taking 6 away from 10."
+    },
+    {
+      "question": "What is the sum of 20 and 30?",
+      "options": ["40", "50", "60", "70"],
+      "answer": "50",
+      "hint": "It's the total when adding 20 and 30."
+    },
+    {
+      "question": "What is the value of the square root of 64?",
+      "options": ["6", "7", "8", "9"],
+      "answer": "8",
+      "hint": "It's the number that, when multiplied by itself, equals 64."
+    },
+    {
+      "question": "What is the perimeter of a square with side length 4?",
+      "options": ["12", "14", "16", "18"],
+      "answer": "16",
+      "hint": "It's the total length around the square."
+    },
+    {
+      "question": "What is the product of 12 and 11?",
+      "options": ["121", "132", "143", "154"],
+      "answer": "132",
+      "hint": "It's the result of multiplying 12 by 11."
+    }
+  ],
   "Science": [
     {
-      "question": "What is the chemical symbol for water?",
-      "options": ["H2", "O2", "H2O", "CO2"],
-      "answer": "H2O"
+      "question": "What is the chemical formula for carbon dioxide?",
+      "options": ["CO", "CO2", "O2", "C2O"],
+      "answer": "CO2",
+      "hint": "It's a compound consisting of one carbon atom and two oxygen atoms."
     },
     {
-      "question": "Which planet is known as the Red Planet?",
-      "options": ["Earth", "Mars", "Jupiter", "Venus"],
-      "answer": "Mars"
+      "question": "What is the powerhouse of the cell?",
+      "options": ["Nucleus", "Ribosome", "Mitochondria", "Chloroplast"],
+      "answer": "Mitochondria",
+      "hint": "It's the part of the cell responsible for generating energy."
     },
     {
-      "question": "What is the process by which plants make their food?",
-      "options": ["Respiration", "Photosynthesis", "Digestion", "Fermentation"],
-      "answer": "Photosynthesis"
+      "question": "What planet is known as the Earth's twin?",
+      "options": ["Mars", "Venus", "Jupiter", "Saturn"],
+      "answer": "Venus",
+      "hint": "It's the second planet from the Sun and similar in size to Earth."
     },
     {
-      "question": "What is the hardest natural substance on Earth?",
-      "options": ["Gold", "Iron", "Diamond", "Silver"],
-      "answer": "Diamond"
+      "question": "What gas do plants absorb from the atmosphere?",
+      "options": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
+      "answer": "Carbon Dioxide",
+      "hint": "It's the gas that plants use in photosynthesis."
     },
     {
-      "question": "Which gas do humans need to breathe in to survive?",
-      "options": ["Nitrogen", "Hydrogen", "Oxygen", "Carbon Dioxide"],
-      "answer": "Oxygen"
+      "question": "What is the boiling point of water in Celsius?",
+      "options": ["50°C", "75°C", "100°C", "125°C"],
+      "answer": "100°C",
+      "hint": "It's the temperature at which water turns to steam."
     },
     {
-      "question": "What is the primary source of energy for the Earth's climate system?",
-      "options": ["The Moon", "The Sun", "The Earth's core", "Ocean currents"],
-      "answer": "The Sun"
+      "question": "What is the chemical symbol for sodium?",
+      "options": ["S", "Na", "Sn", "Sa"],
+      "answer": "Na",
+      "hint": "It's the element represented by the letter 'N' and 'a' in the periodic table."
     },
     {
-      "question": "What is the main element found in the sun?",
-      "options": ["Carbon", "Hydrogen", "Oxygen", "Nitrogen"],
-      "answer": "Hydrogen"
+      "question": "What type of energy is stored in a battery?",
+      "options": ["Kinetic", "Thermal", "Chemical", "Nuclear"],
+      "answer": "Chemical",
+      "hint": "It's the type of energy that results from chemical reactions."
     },
     {
-      "question": "Which part of the cell contains genetic material?",
-      "options": ["Cell wall", "Mitochondria", "Nucleus", "Ribosome"],
-      "answer": "Nucleus"
+      "question": "What is the most abundant gas in the Earth's atmosphere?",
+      "options": ["Oxygen", "Carbon Dioxide", "Hydrogen", "Nitrogen"],
+      "answer": "Nitrogen",
+      "hint": "It's the gas that makes up the majority of the atmosphere."
     },
     {
-      "question": "Which of the following is a non-renewable resource?",
-      "options": ["Solar energy", "Wind energy", "Coal", "Hydroelectric power"],
-      "answer": "Coal"
+      "question": "What organ in the human body is responsible for pumping blood?",
+      "options": ["Lungs", "Brain", "Heart", "Kidneys"],
+      "answer": "Heart",
+      "hint": "It's the muscular organ located in the chest cavity."
     },
     {
-      "question": "What is the speed of light in a vacuum?",
-      "options": ["3,000 km/s", "30,000 km/s", "300,000 km/s", "3,000,000 km/s"],
-      "answer": "300,000 km/s"
+      "question": "What is the chemical formula for table salt?",
+      "options": ["NaCl", "KCl", "CaCl2", "MgCl2"],
+      "answer": "NaCl",
+      "hint": "It's a compound made from sodium and chlorine."
     }
   ],
   "Computer Science": [
     {
-      "question": "What does CPU stand for in computer terminology?",
-      "options": ["Central Processing Unit", "Central Programming Unit", "Central Process Unit", "Central Peripheral Unit"],
-      "answer": "Central Processing Unit"
+      "question": "What does HTML stand for?",
+      "options": ["Hyper Text Makeup Language", "Hyper Text Markup Language", "Hyperlinks Text Markup Language", "Hyperlinking Text Makeup Language"],
+      "answer": "Hyper Text Markup Language",
+      "hint": "It's the standard language used to create web pages."
     },
     {
-      "question": "What is the binary representation of the decimal number 10?",
-      "options": ["1010", "1100", "1001", "1110"],
-      "answer": "1010"
+      "question": "What is the primary function of an operating system?",
+      "options": ["To create documents", "To manage computer hardware and software resources", "To browse the internet", "To edit images"],
+      "answer": "To manage computer hardware and software resources",
+      "hint": "It's responsible for managing and coordinating hardware and software on a computer."
     },
     {
-      "question": "Which of the following is a programming language?",
-      "options": ["HTML", "CSS", "JavaScript", "XML"],
-      "answer": "JavaScript"
+      "question": "What is the full form of IP in computer networks?",
+      "options": ["Internet Protocol", "Internet Process", "Internal Protocol", "Internal Process"],
+      "answer": "Internet Protocol",
+      "hint": "It's the protocol used for addressing and routing data on the internet."
     },
     {
-      "question": "What is the full form of RAM?",
-      "options": ["Readily Accessible Memory", "Random Access Memory", "Read Access Memory", "Real Access Memory"],
-      "answer": "Random Access Memory"
+      "question": "Which of the following is a web browser?",
+      "options": ["Google", "Bing", "Chrome", "Yahoo"],
+      "answer": "Chrome",
+      "hint": "It's a popular web browser developed by Google."
     },
     {
-      "question": "Which company developed the Java programming language?",
-      "options": ["Microsoft", "Sun Microsystems", "Apple", "Google"],
-      "answer": "Sun Microsystems"
+      "question": "Which programming language is primarily used for developing Android apps?",
+      "options": ["Swift", "Kotlin", "Java", "Python"],
+      "answer": "Java",
+      "hint": "It's a widely used language for Android development."
+    },
+    {
+      "question": "What does the acronym HTTP stand for?",
+      "options": ["Hyper Text Transfer Protocol", "High Text Transfer Protocol", "Hyper Text Transmission Protocol", "High Text Transmission Protocol"],
+      "answer": "Hyper Text Transfer Protocol",
+      "hint": "It's the protocol used for transferring data over the web."
+    },
+    {
+      "question": "What is the main component of a computer that performs calculations and processing?",
+      "options": ["RAM", "Hard Drive", "CPU", "GPU"],
+      "answer": "CPU",
+      "hint": "It's often referred to as the brain of the computer."
+    },
+    {
+      "question": "Which of the following is an example of an operating system?",
+      "options": ["Microsoft Word", "Google Chrome", "Windows 10", "Python"],
+      "answer": "Windows 10",
+      "hint": "It's a widely used operating system developed by Microsoft."
+    },
+    {
+      "question": "What does GUI stand for in computing?",
+      "options": ["General User Interface", "Graphical User Interface", "Generated User Interface", "Generic User Interface"],
+      "answer": "Graphical User Interface",
+      "hint": "It's a type of interface that allows users to interact with electronic devices using graphical elements."
+    },
+    {
+      "question": "What is the term for a small piece of data sent from a website and stored on the user's computer by the user's web browser?",
+      "options": ["Cookie", "Cache", "Session", "Token"],
+      "answer": "Cookie",
+      "hint": "It's used by websites to remember user preferences and login details."
     }
   ],
-  "Mathematics": [
+  "General Knowledge": [
     {
-      "question": "What is the value of π (pi) to two decimal places?",
-      "options": ["3.12", "3.14", "3.16", "3.18"],
-      "answer": "3.14"
+      "question": "Who is known as the father of the computer?",
+      "options": ["Alan Turing", "Bill Gates", "Charles Babbage", "Steve Jobs"],
+      "answer": "Charles Babbage",
+      "hint": "He is often referred to as the inventor of the first mechanical computer."
     },
     {
-      "question": "What is the square root of 144?",
-      "options": ["10", "11", "12", "13"],
-      "answer": "12"
+      "question": "Which is the smallest continent by land area?",
+      "options": ["Europe", "Australia", "Africa", "Antarctica"],
+      "answer": "Australia",
+      "hint": "It's also known as the 'Land Down Under'."
     },
     {
-      "question": "What is 5! (5 factorial)?",
-      "options": ["120", "60", "24", "15"],
-      "answer": "120"
+      "question": "Which planet is known for its rings?",
+      "options": ["Saturn", "Mars", "Jupiter", "Neptune"],
+      "answer": "Saturn",
+      "hint": "It's the sixth planet from the Sun and is famous for its ring system."
     },
     {
-      "question": "What is the sum of angles in a triangle?",
-      "options": ["180 degrees", "360 degrees", "90 degrees", "270 degrees"],
-      "answer": "180 degrees"
+      "question": "What is the capital city of Japan?",
+      "options": ["Beijing", "Seoul", "Tokyo", "Kyoto"],
+      "answer": "Tokyo",
+      "hint": "It's one of the largest cities in the world and the capital of Japan."
+    },
+    {
+      "question": "Which ocean is the largest by surface area?",
+      "options": ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
+      "answer": "Pacific Ocean",
+      "hint": "It's the largest and deepest ocean on Earth."
+    },
+    {
+      "question": "Who wrote 'To Kill a Mockingbird'?",
+      "options": ["Harper Lee", "Mark Twain", "Ernest Hemingway", "J.D. Salinger"],
+      "answer": "Harper Lee",
+      "hint": "She is known for her classic novel published in 1960."
+    },
+    {
+      "question": "What is the national currency of the United Kingdom?",
+      "options": ["Dollar", "Euro", "Pound Sterling", "Yen"],
+      "answer": "Pound Sterling",
+      "hint": "It's often referred to simply as the 'Pound'."
+    },
+    {
+      "question": "Which company is known for its 'Apple' logo?",
+      "options": ["Google", "Apple", "Microsoft", "Amazon"],
+      "answer": "Apple",
+      "hint": "It is a technology company known for its smartphones and computers."
+    },
+    {
+      "question": "Who was the first man to walk on the moon?",
+      "options": ["Neil Armstrong", "Buzz Aldrin", "Yuri Gagarin", "Michael Collins"],
+      "answer": "Neil Armstrong",
+      "hint": "He set foot on the moon during the Apollo 11 mission."
+    },
+    {
+      "question": "Which country is famous for the Eiffel Tower?",
+      "options": ["France", "Italy", "Spain", "Germany"],
+      "answer": "France",
+      "hint": "The Eiffel Tower is located in its capital city, Paris."
     }
   ],
-  "History": [
+  "Sports": [
     {
-      "question": "Who was the first President of the United States?",
-      "options": ["George Washington", "Thomas Jefferson", "Abraham Lincoln", "John Adams"],
-      "answer": "George Washington"
+      "question": "Which country won the FIFA World Cup in 2018?",
+      "options": ["Germany", "Argentina", "Italy", "Brazil"],
+      "answer": "France",
+      "hint": "This country is known for its rich football history and the Eiffel Tower."
     },
     {
-      "question": "In which year did World War II end?",
-      "options": ["1942", "1944", "1945", "1946"],
-      "answer": "1945"
+      "question": "Which sport uses a shuttlecock?",
+      "options": ["Tennis", "Badminton", "Squash", "Table Tennis"],
+      "answer": "Badminton",
+      "hint": "The game is played with a feathered object that flies through the air."
     },
     {
-      "question": "Which ancient civilization built the pyramids?",
-      "options": ["Roman", "Greek", "Egyptian", "Mesopotamian"],
-      "answer": "Egyptian"
+      "question": "Who holds the record for the most home runs in a single MLB season?",
+      "options": ["Babe Ruth", "Hank Aaron", "Barry Bonds", "Willie Mays"],
+      "answer": "Barry Bonds",
+      "hint": "This player set the record in 2001."
     },
     {
-      "question": "What was the primary language spoken in the Roman Empire?",
-      "options": ["Greek", "Latin", "French", "German"],
-      "answer": "Latin"
+      "question": "What is the national sport of Canada?",
+      "options": ["Ice Hockey", "Lacrosse", "Basketball", "Baseball"],
+      "answer": "Lacrosse",
+      "hint": "It's a team sport played with a stick and a ball."
     },
     {
-      "question": "Who wrote the Declaration of Independence?",
-      "options": ["George Washington", "Thomas Jefferson", "Benjamin Franklin", "John Adams"],
-      "answer": "Thomas Jefferson"
+      "question": "In which sport can you score a 'hole-in-one'?",
+      "options": ["Baseball", "Golf", "Basketball", "Tennis"],
+      "answer": "Golf",
+      "hint": "It's an achievement in the game of golf."
+    },
+    {
+      "question": "Which country hosts the Wimbledon tennis tournament?",
+      "options": ["USA", "France", "Australia", "United Kingdom"],
+      "answer": "United Kingdom",
+      "hint": "It's known for its grass courts and is held in London."
+    },
+    {
+      "question": "How long is an Olympic swimming pool?",
+      "options": ["25 meters", "50 meters", "75 meters", "100 meters"],
+      "answer": "50 meters",
+      "hint": "It's the length of a standard competitive swimming pool."
+    },
+    {
+      "question": "Which sport is associated with the terms 'love', 'deuce', and 'match point'?",
+      "options": ["Tennis", "Badminton", "Squash", "Table Tennis"],
+      "answer": "Tennis",
+      "hint": "These terms are used in the game of tennis."
+    }
+  ],
+  "Art and Literature": [
+    {
+      "question": "Who wrote 'The Odyssey'?",
+      "options": ["Homer", "Virgil", "Dante", "Shakespeare"],
+      "answer": "Homer",
+      "hint": "He is known for ancient Greek epic poems."
+    },
+    {
+      "question": "What is the art of paper folding called?",
+      "options": ["Calligraphy", "Origami", "Pottery", "Sculpture"],
+      "answer": "Origami",
+      "hint": "It involves folding paper into decorative shapes."
+    },
+    {
+      "question": "Who is the author of 'Pride and Prejudice'?",
+      "options": ["Charlotte Brontë", "Mary Shelley", "Jane Austen", "Emily Dickinson"],
+      "answer": "Jane Austen",
+      "hint": "She wrote about the Bennet family and Mr. Darcy."
+    },
+    {
+      "question": "What is the name of the art style characterized by small dots of color?",
+      "options": ["Cubism", "Impressionism", "Pointillism", "Surrealism"],
+      "answer": "Pointillism",
+      "hint": "It's an art technique using tiny dots to form images."
+    },
+    {
+      "question": "Who painted the ceiling of the Sistine Chapel?",
+      "options": ["Michelangelo", "Leonardo da Vinci", "Raphael", "Donatello"],
+      "answer": "Michelangelo",
+      "hint": "He was a Renaissance artist known for his frescoes."
+    },
+    {
+      "question": "What is the famous novel written by George Orwell about a dystopian future?",
+      "options": ["Brave New World", "Fahrenheit 451", "1984", "The Handmaid's Tale"],
+      "answer": "1984",
+      "hint": "It's a novel depicting a totalitarian regime."
+    },
+    {
+      "question": "Which poet wrote 'The Raven'?",
+      "options": ["Robert Frost", "Emily Dickinson", "Edgar Allan Poe", "Walt Whitman"],
+      "answer": "Edgar Allan Poe",
+      "hint": "He is known for his macabre and mysterious poetry."
+    },
+    {
+      "question": "What is the term for a three-dimensional work of art?",
+      "options": ["Drawing", "Painting", "Sculpture", "Photograph"],
+      "answer": "Sculpture",
+      "hint": "It's a work of art that you can physically touch and view from all angles."
+    },
+    {
+      "question": "Who is the author of 'The Great Gatsby'?",
+      "options": ["F. Scott Fitzgerald", "Ernest Hemingway", "Mark Twain", "J.D. Salinger"],
+      "answer": "F. Scott Fitzgerald",
+      "hint": "He wrote about the Jazz Age and the American Dream."
+    },
+    {
+      "question": "What is the style of painting associated with artists like Claude Monet and Pierre-Auguste Renoir?",
+      "options": ["Baroque", "Impressionism", "Realism", "Romanticism"],
+      "answer": "Impressionism",
+      "hint": "This style focuses on capturing light and natural scenes."
     }
   ]
 }
